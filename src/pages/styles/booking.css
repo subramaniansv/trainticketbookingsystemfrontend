@@ -1,0 +1,72 @@
+.booking-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.booking-container h2 {
+  color: #14a1cc;
+  margin-top: 25px;
+}
+
+.booking-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.booking-container button {
+  background: #14a1cc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.booking-container button:hover {
+  background: #1086a8;
+}
+
+.booking-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.booking-container li {
+  background: #f5fbfd;
+  border: 1px solid #d7eef5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.booking-container li:hover {
+  background: #e6f7fc;
+  transform: translateY(-2px);
+}
+
+.booking-container li button {
+  margin-top: 8px;
+}
+
+.booking-container p {
+  color: #666;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  background: #ff4d4f;
+}
+
+.logout-btn:hover {
+  background: #d9363e;
+}

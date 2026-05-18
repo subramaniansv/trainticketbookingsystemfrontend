@@ -1,0 +1,60 @@
+/* Sidebar Container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -220px; /* hidden position on left */
+    width: 220px;
+    height: 100vh;
+    background: #0d94bd;
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+/* When sidebar opens */
+.sidebar.open {
+    left: 0;
+}
+
+/* Toggle button */
+.toggle-button {
+    position: absolute;
+    right: -45px; /* button appears outside sidebar */
+    top: 20px;
+    background: #0d94bd;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Navigation */
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+.nav-link {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+/* Hover */
+.nav-link:hover {
+    background: #b0cbf0;
+    color: white;
+}
+
+/* Active Link */
+.active-link {
+    background: #b0cbf0;
+    color: white;
+}
