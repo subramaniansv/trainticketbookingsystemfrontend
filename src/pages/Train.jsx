@@ -33,11 +33,13 @@ const fetchSchedules = async () => {
     fetchSchedules();
   }, [id, isAc]);
 
-  const isTomorrow = (dateArr) => {
+  const isTomorrow = (date) => {
     const today = new Date();
     const tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);
-    const scheduleDate = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
+    const scheduleDate = Array.isArray(date)
+      ? new Date(date[0], date[1] - 1, date[2])
+      : new Date(date);
     return (
       scheduleDate.getFullYear() === tomorrow.getFullYear() &&
       scheduleDate.getMonth() === tomorrow.getMonth() &&
@@ -59,8 +61,11 @@ const fetchSchedules = async () => {
     return( km * train.tatkalFare + acFare + nonAcFare) * seatCount;
   };
 
-  const formatDate = (dateArr) => {
-    return `${dateArr[0]}-${String(dateArr[1]).padStart(2, "0")}-${String(dateArr[2]).padStart(2, "0")}`;
+  const formatDate = (date) => {
+    if (Array.isArray(date)) {
+      return `${date[0]}-${String(date[1]).padStart(2, "0")}-${String(date[2]).padStart(2, "0")}`;
+    }
+    return date;
   };
 
   const buildBookingBody = (schedule, tatkal) => ({
