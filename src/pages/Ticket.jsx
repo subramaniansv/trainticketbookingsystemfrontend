@@ -34,7 +34,7 @@ const Ticket = () => {
     return (
         <div>
             
-            <TicketCard ticket={ticket} view={true} handleCancel={handleCancel} />
+            <TicketCard ticket={ticket} view={true} handleCancel={handleCancel} isCancellable ={ticket.status !== "CANCELLED" && ticket.status !== "REFUNDED" && ticket.status !== "COMPLETED"}/>
         </div>
     );
 };
