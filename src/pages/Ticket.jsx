@@ -7,7 +7,7 @@ const Ticket = () => {
     const params = useParams();
     const ticketId = params.id;
     const userId=localStorage.getItem("userId");
-    const baseUrl = `https://trainticketbookingsystem-rbih.onrender.com/api/booking/${ticketId}?userId=${userId}`;
+    const baseUrl = `https://trainticketbookingsystem-1.onrender.com/api/booking/${ticketId}?userId=${userId}`;
 
     const [ticket, setTicket] = useState({});
     const navigate = useNavigate();

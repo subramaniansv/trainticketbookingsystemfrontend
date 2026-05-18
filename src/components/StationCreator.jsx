@@ -7,7 +7,7 @@ const StationCreator = () => {
      ev.preventDefault();
         const formData = new FormData(ev.target);
         const jsonData = Object.fromEntries(formData.entries());
-        const response = await fetch("https://trainticketbookingsystem-rbih.onrender.com/api/station/",{
+        const response = await fetch("https://trainticketbookingsystem-1.onrender.com/api/station/",{
             method: "post",
             body:JSON.stringify(jsonData)
         })
@@ -23,7 +23,7 @@ const StationCreator = () => {
 
 useEffect(() => {
     const fetchStations = async () => {
-        const response = await fetch("https://trainticketbookingsystem-rbih.onrender.com/api/station/",{
+        const response = await fetch("https://trainticketbookingsystem-1.onrender.com/api/station/",{
             method:"GET"
         });
         const data = await response.json();

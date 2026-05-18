@@ -25,7 +25,7 @@ const Login = () => {
         password: password
     }
 
-    const baseUrl = "https://trainticketbookingsystem-rbih.onrender.com/api/";
+    const baseUrl = "https://trainticketbookingsystem-1.onrender.com/api/";
     const navigate = useNavigate();
     const handleSubmit = async(e) =>{
         e.preventDefault();

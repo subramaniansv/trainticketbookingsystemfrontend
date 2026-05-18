@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 const TrainCreator = () => {
-  const baseUrl = "https://trainticketbookingsystem-rbih.onrender.com/api/";
+  const baseUrl = "https://trainticketbookingsystem-1.onrender.com/api/";
   const [routes, setRoutes] = useState([]);
 
   const [trainName, setTrainName] = useState("");

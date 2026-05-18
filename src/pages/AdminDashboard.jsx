@@ -9,7 +9,7 @@ import { X } from "lucide-react";
 import { formatDate, formatTime } from "../Util.js";
 import "./styles/admin.css";
 const AdminDashboard = () => {
-  const baseURL = "https://trainticketbookingsystem-rbih.onrender.com/api/";
+  const baseURL = "https://trainticketbookingsystem-1.onrender.com/api/";
 
   const [stations, setStations] = useState([]);
   const [routes, setRoutes] = useState([]);

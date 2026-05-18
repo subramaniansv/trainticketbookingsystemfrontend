@@ -4,7 +4,7 @@ import TicketCard from '../components/TicketCard';
 import SideBar from '../components/SideBar';
 const TicketHistory = () => {
     const userID = localStorage.getItem("userId");
-    const baseUrl = `https://trainticketbookingsystem-rbih.onrender.com/api/booking/?userId=${userID}`;
+    const baseUrl = `https://trainticketbookingsystem-1.onrender.com/api/booking/?userId=${userID}`;
 
     const [tickets, setTickets] = useState([]);
     const navigate = useNavigate();

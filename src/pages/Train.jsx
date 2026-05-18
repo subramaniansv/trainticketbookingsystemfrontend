@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { formatTime,arrayToDate } from "../Util.js";
 import SideBar from "../components/SideBar";
 const Train = () => {
-  const baseURL = "https://trainticketbookingsystem-rbih.onrender.com/api/";
+  const baseURL = "https://trainticketbookingsystem-1.onrender.com/api/";
   const { id, km } = useParams();
   const navigate = useNavigate();
 
